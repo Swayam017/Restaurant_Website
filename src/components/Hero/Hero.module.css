@@ -1,0 +1,48 @@
+.hero {
+  height: 500px;
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+
+  color: white;
+
+  padding: 2rem 3rem;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  max-width: 700px;
+}
+
+.overlay h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.overlay p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.overlay button {
+  background-color: #8b0000;
+  color: white;
+
+  border: none;
+  padding: 12px 24px;
+
+  border-radius: 25px;
+  cursor: pointer;
+
+  font-size: 1rem;
+}
