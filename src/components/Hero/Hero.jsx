@@ -16,7 +16,8 @@ function Hero() {
           dinner at home.
         </p>
 
-        <button>Order Now</button>
+        <p>All our meals are cooked with high-quality ingredients , just in time and 
+          of course by experienced chefs</p>
       </div>
     </section>
   );
