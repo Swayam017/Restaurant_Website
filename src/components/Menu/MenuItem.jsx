@@ -1,8 +1,8 @@
 import classes from "./Menu.module.css";
+import MenuItemForm from "./MenuItemForm";
 
 function MenuItem({ item }) {
   return (
-    
     <div className={classes.menuItem}>
       <img
         src={item.image}
@@ -20,19 +20,8 @@ function MenuItem({ item }) {
         </span>
       </div>
 
-      <div className={classes.actions}>
-        <label>Amount</label>
-
-        <input
-          type="number"
-          min="1"
-          defaultValue="1"
-        />
-
-        <button>+ Add</button>
-      </div>
+      <MenuItemForm id={item.id} />
     </div>
-    
   );
 }
 
