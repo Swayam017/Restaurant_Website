@@ -39,10 +39,6 @@
   margin: 0;
 }
 
-.cartItems li {
-  padding: 1rem 0;
-  border-bottom: 1px solid #ddd;
-}
 
 .total {
   display: flex;
@@ -101,4 +97,53 @@
     opacity: 1;
     transform: translate(-50%, 0);
   }
+}
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 0;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.summary {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #8b0000;
+}
+
+.amount {
+  border: 1px solid #ccc;
+  padding: 0.2rem 0.8rem;
+  border-radius: 6px;
+}
+
+.itemActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.itemActions button {
+  width: 2rem;
+  height: 2rem;
+
+  border: 1px solid #8b0000;
+
+  background: white;
+
+  color: #8b0000;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 1.2rem;
+  font-weight: bold;
 }

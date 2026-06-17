@@ -1,13 +1,37 @@
+import { useContext, useRef } from "react";
 import Input from "../UI/Input";
 import classes from "./Menu.module.css";
+import CartContext from "../../store/cart-context";
 
-function MenuItemForm({ id }) {
+function MenuItemForm(props) {
+  const amountInputRef = useRef();
+
+  const cartCtx = useContext(CartContext);
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+
+    const enteredAmount =
+      +amountInputRef.current.value;
+
+    cartCtx.addItem({
+      id: props.id,
+      name: props.name,
+      amount: enteredAmount,
+      price: props.price,
+    });
+  };
+
   return (
-    <form className={classes.form}>
+    <form
+      className={classes.form}
+      onSubmit={submitHandler}
+    >
       <Input
+        ref={amountInputRef}
         label="Amount"
         input={{
-          id: `amount_${id}`,
+          id: `amount_${props.id}`,
           type: "number",
           min: "1",
           max: "5",

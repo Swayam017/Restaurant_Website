@@ -20,7 +20,11 @@ function MenuItem({ item }) {
         </span>
       </div>
 
-      <MenuItemForm id={item.id} />
+      <MenuItemForm
+  id={item.id}
+  name={item.name}
+  price={item.price}
+/>
     </div>
   );
 }

@@ -1,16 +1,16 @@
 import classes from "./Header.module.css";
+import HeaderCartButton from "./HeaderCartButton";
 
 function Header({ onShowCart }) {
   return (
     <header className={classes.header}>
-      <h1 className={classes.logo}>Foodie's Hub</h1>
+      <h1 className={classes.logo}>
+        Foodie's Hub
+      </h1>
 
-      <button
-        className={classes.cartBtn}
+      <HeaderCartButton
         onClick={onShowCart}
-      >
-        🛒 Cart
-      </button>
+      />
     </header>
   );
 }
