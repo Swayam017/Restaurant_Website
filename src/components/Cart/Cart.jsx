@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Modal from "../UI/Modal";
 import classes from "./Cart.module.css";
 import CartContext from "../../store/cart-context";
+import AIRecommendations from "../AI/AIRecommendations";
 
 function Cart(props) {
   const cartCtx = useContext(CartContext);
@@ -62,6 +63,7 @@ function Cart(props) {
         <span>Total Amount</span>
         <span>{totalAmount}</span>
       </div>
+      <AIRecommendations />
 
       <div className={classes.actions}>
         <button

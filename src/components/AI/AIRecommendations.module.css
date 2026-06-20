@@ -1,0 +1,22 @@
+.recommendations {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #fff8e1;
+  border-radius: 12px;
+}
+
+.recommendations h2 {
+  margin-bottom: 0.75rem;
+}
+
+.recommendations ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recommendations li {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: white;
+  border-radius: 8px;
+}
